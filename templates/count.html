@@ -1,0 +1,21 @@
+<head>
+  <title >Word Counter</title>
+  <meta charset="UTF-8">
+</head>
+<script>
+  function goBack(){
+    window.history.back();
+  }
+</script>
+<h1 style="font-family:monospace; font-size:30px;text-align:left;">Word Counter</h1>
+
+
+<p style="font-family:monospace; font-size:25px;text-align:left;"> There are <b>{{count}}</b> words in your entered text!</p>
+<p style="font-family:monospace; font-size:25px;text-align:left;">There are <b>{{totchar}}</b> characters in your entered text!</p>
+<p style="font-family:monospace; font-size:25px;text-align:left;"> Most Occurred words are <b>{{wordcount}}</b>
+<p style="font-family:monospace; font-size:25px;text-align:left;">And entered text of yours is <br  /> <b>"{{text}}"</b></p>
+<body style="border-style:solid; border-color:DarkSlateGray; border-width:3px;background-color: CadetBlue;text-align:center;">
+<p style="font-family:monospace; font-size:25px;text-align:center; ">  <a href="{% url 'about' %}"><b>About</b></a></p>
+<button onclick="goBack()" style="font-family:monospace; font-size:25px;">Back</button>
+
+</body>

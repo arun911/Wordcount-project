@@ -1,0 +1,23 @@
+<style>
+    div{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  margin-right: 150px;
+  margin-left: 150px;
+    }
+</style>
+<body style="border-style:solid; border-color: DarkSlateGray; border-width:3px;background-color: CadetBlue;text-align:center">
+    <p style="font-family:monospace; font-size:25px;"><b> Welcome to the word counter appplication.you can count the number of words present in the paragraph.</b></p>
+    <br  />
+    <p style="font-family:monospace; font-size:25px;"><b> To find the number of words present in your preferable paragraph , just fill it up in the bellow tag box!!</b></p>
+<div >
+<h1 style="font-family:monospace; font-size:30px;"> WORD COUNTING CALCULATOR</h1>
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="10" name="text" style="background-color:LightGray" > </textarea>
+    <br />
+    <input type="submit" value="COUNT" />
+    <input type="reset" value="RESET"/>
+</form>
+
+</div>
+</body>
